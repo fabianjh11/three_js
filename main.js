@@ -61,13 +61,13 @@ const earth = new THREE.Mesh(
 );
 scene.add(earth);
 
-//earth.position.x = 3;
-//earth.position.y = 53;
-//earth.position.z = 66;
+earth.position.x = 3;
+earth.position.y = 53;
+earth.position.z = 66;
 
-earth.position.x = 0;
-earth.position.y = 63;
-earth.position.z = 73;
+//earth.position.x = 0;
+//earth.position.y = 63;
+//earth.position.z = 73;
 
 let t = document.body.getBoundingClientRect().top;
 function moveCamera() {
