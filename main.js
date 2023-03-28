@@ -61,7 +61,7 @@ const earth = new THREE.Mesh(
 );
 scene.add(earth);
 
-earth.position.x = 3;
+earth.position.x = 0;
 earth.position.y = 53;
 earth.position.z = 66;
 
