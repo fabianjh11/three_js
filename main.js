@@ -36,7 +36,7 @@ function addBubble(){
   return bubble;
 }
 
-const spaceTexture = new THREE.TextureLoader().load('/public/static/ocean.jpg');
+const spaceTexture = new THREE.TextureLoader().load('/static/ocean.jpg');
 scene.background = spaceTexture;
 
 let bubbleCount = 0;
@@ -44,7 +44,7 @@ const maxB = 35;
 const bubbles = Array(maxB).fill(0);
 let bubble;
 
-const picTexture = new THREE.TextureLoader().load('/public/static/Yo.jfif');
+const picTexture = new THREE.TextureLoader().load('/static/Yo.jfif');
 const picture = new THREE.Mesh(
   new THREE.BoxGeometry(12, 12, 12),
   new THREE.MeshBasicMaterial({map: picTexture})
@@ -54,7 +54,7 @@ picture.position.y = -5;
 picture.position.z = -22;
 scene.add(picture);
 
-const earthTexture = new THREE.TextureLoader().load('/public/static/earth.png');
+const earthTexture = new THREE.TextureLoader().load('/static/earth.png');
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({map: earthTexture})
