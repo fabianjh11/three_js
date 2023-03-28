@@ -54,7 +54,7 @@ picture.position.y = -5;
 picture.position.z = -22;
 scene.add(picture);
 
-const earthTexture = new THREE.TextureLoader().load('/static/earth.jfif');
+const earthTexture = new THREE.TextureLoader().load('/static/earth.png');
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({map: earthTexture})
